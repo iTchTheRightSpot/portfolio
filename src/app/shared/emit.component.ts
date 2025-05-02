@@ -47,7 +47,9 @@ import {
           <p-button
             label="Notify"
             [disabled]="fb.invalid"
-            (click)="emit.emit(fb.controls['name'].value!)"
+            (click)="
+              emit.emit(fb.controls['name'].value!); isVisible.set(false)
+            "
           />
         </div>
       </form>
