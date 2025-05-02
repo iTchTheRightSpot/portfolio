@@ -6,6 +6,7 @@
     "outDir": "./dist/out-tsc",
     "baseUrl": "./",
     "paths": {
+      "~env/*": ["src/environments/*"],
       "~portfolio/*": ["src/app/*"],
       "~pages/*": ["src/app/pages/*"],
       "~shared/*": ["src/app/shared/*"]
