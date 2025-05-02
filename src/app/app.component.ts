@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavComponent } from '~shared/nav.component';
+import { FooterComponent } from '~shared/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, NavComponent, FooterComponent],
+  template: `
+    <div class="w-full xl:max-w-4xl m-auto">
+      <app-nav />
+      <router-outlet />
+      <app-footer />
+    </div>
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent {
-  title = 'portfolio';
-}
+export class AppComponent {}
