@@ -1,4 +1,5 @@
 export const environment = {
-  production: false,
-  domain: 'https://api.emmanueluluabuike.com/api'
+  production: true,
+  domain: 'https://api.emmanueluluabuike.com/api',
+  github: 'https://github.com/iTchTheRightSpot'
 };
