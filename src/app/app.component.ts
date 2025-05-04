@@ -17,7 +17,7 @@ import { AsyncPipe } from '@angular/common';
     AsyncPipe
   ],
   template: `
-    <div class="w-full xl:max-w-4xl m-auto">
+    <div class="w-full m-auto p-2 xl:p-0 xl:max-w-4xl m-auto">
       <app-nav />
       <router-outlet />
       <app-footer />

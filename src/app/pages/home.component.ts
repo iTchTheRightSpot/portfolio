@@ -18,10 +18,12 @@ import { Image } from 'primeng/image';
       <div class="flex flex-col items-center justify-center text-center">
         <h1 class="text-xl lg:text-3xl">Somto Uluabuike</h1>
         <p class="my-4 text-sm lg:text-base">
-          Full Stack Developer at
+          B.Sc General Science graduate from
+          <span class="text-[var(--p-primary-color)]"> Lakehead University</span
+          >, a Full Stack Developer at
           <span class="text-[var(--p-primary-color)]">S.EJ.U Development</span>
-          Open-Source contributor with key interests in application development
-          and computer networks and distribution.
+          and an Open-Source contributor with key interests in application
+          development and computer networks and distributed systems.
         </p>
         <p-button label="Resume" (onClick)="resume()" />
       </div>
