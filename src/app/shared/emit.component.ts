@@ -22,7 +22,7 @@ import {
   imports: [Button, Dialog, FloatLabel, InputText, ReactiveFormsModule],
   template: `
     <p-dialog
-      header="Who's stopping by today? 😃"
+      header="Who is stopping by today? 😃"
       [modal]="true"
       [(visible)]="isVisible"
       [style]="{ width: '25rem' }"
@@ -40,7 +40,7 @@ import {
         </p-floatlabel>
         <div class="flex justify-end gap-2">
           <p-button
-            label="Close"
+            label="Ignore"
             severity="secondary"
             (click)="isVisible.set(false)"
           />
