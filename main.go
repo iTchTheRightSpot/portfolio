@@ -6,6 +6,7 @@ import (
 	"github.com/iTchTheRightSpot/utility/middleware"
 	"github.com/iTchTheRightSpot/utility/utils"
 	"github.com/rs/cors"
+	"github.com/syumai/workers"
 	"net/http"
 	"os"
 	"strings"
@@ -45,16 +46,6 @@ func main() {
 		AllowCredentials: true,
 	})
 
-	port := cmp.Or(os.Getenv("PORT"), ":8080")
-	srv := http.Server{
-		Addr:              port,
-		WriteTimeout:      3 * time.Second,
-		IdleTimeout:       30 * time.Second,
-		ReadHeaderTimeout: 3 * time.Second,
-		ReadTimeout:       3 * time.Second,
-		Handler:           m.Log(c.Handler(m.Panic(mux))),
-	}
-
-	lg.Log(context.Background(), "server listening on port "+port)
-	lg.Fatal(srv.ListenAndServe())
+	lg.Log(context.Background(), "server listening on default port 9900")
+	workers.Serve(m.Log(c.Handler(m.Panic(mux))))
 }
