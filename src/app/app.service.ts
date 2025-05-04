@@ -11,7 +11,7 @@ export class AppService {
 
   readonly emit = (name: string) =>
     this.http
-      .post<HttpResponse<number>>(`${environment.domain}/${name}`, {})
+      .post<HttpResponse<number>>(`${environment.domain}?name=${name}`, {})
       .pipe(
         map(res => res.status),
         catchError(err => of(err.status || 400))
