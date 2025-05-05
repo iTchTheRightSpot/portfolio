@@ -9,7 +9,7 @@
       "~env/*": ["src/environments/*"],
       "~portfolio/*": ["src/app/*"],
       "~pages/*": ["src/app/pages/*"],
-      "~shared/*": ["src/app/shared/*"]
+      "~ui/*": ["src/app/ui/*"]
     },
     "strict": true,
     "noImplicitOverride": true,

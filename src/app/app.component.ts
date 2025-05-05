@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavComponent } from '~shared/nav.component';
-import { FooterComponent } from '~shared/footer.component';
+import { NavComponent } from '~ui/nav.component';
+import { FooterComponent } from '~ui/footer.component';
 import { AppService } from '~portfolio/app.service';
 import { Subject, switchMap } from 'rxjs';
-import { EmitComponent } from '~shared/emit.component';
+import { EmitComponent } from '~ui/emit.component';
 import { AsyncPipe } from '@angular/common';
 
 @Component({

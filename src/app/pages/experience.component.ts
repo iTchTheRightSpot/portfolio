@@ -30,38 +30,40 @@ export class ExperienceComponent {
       position: 'Lead Software Developer',
       duration: 'Jan 2025 - Present',
       description: [
-        'Developing a browser extension <span class="text-[var(--p-primary-color)]">Speak</span> to assist language learners',
-        'Successfully migrated from a microservice architecture to a single monolith improving latency by <span class="text-[var(--p-primary-color)]">3s</span>',
-        'Designed and implemented OAuth-based authentication and authorization mechanisms to enhance security across the application'
+        'Developed <span class="text-[var(--p-primary-color)]">Speak</span>, a Chrome extension that aids language learning by converting text to speech with synchronized word highlighting.',
+        'Translated Figma prototypes into reusable, responsive, and accessible UI components.',
+        'Implemented interservice communication between Go and Python microservice.',
+        'Optimized API performance by applying aggressive timeouts and refining SQL queries with targeted indexing, reducing response times to under <span class="text-[var(--p-primary-color)]">50ms.</span>',
+        'Implemented secure, scalable OAuth-based authentication and authorization, supporting real-time access for <span class="text-[var(--p-primary-color)]">20</span> active users.'
       ],
       links: [],
       tech_stack: ['Angular |', 'Go |', 'Python |', 'PostgreSQL |', 'AWS']
     },
     {
       title: 'Fardelins',
-      position: 'Software developer (8 month contract)',
+      position: 'Software developer (contract)',
       duration: 'June 2025 - Feb 2025',
       description: [
-        'Collaborated with the team members to upgrade and enhance the Courier Dashboard from Angular 15 to 18.',
-        'Designed and implemented a streamlined company and customer registration process, reducing costs and enhancing UX',
-        'Introduced in-memory caching for frequently requested database responses resulting in faster API response times.',
+        'Upgraded the Courier Dashboard from Angular 15 – 18, migrated state management from RxJS/NGRX to Signals and NGRX signal store, implemented new UI features based on Figma prototypes, and built reusable components to improve development efficiency and scalability',
+        'Integrated drag-and-drop document upload for Corporate Affairs Commission (CAC) verification, Google Maps API for real-time package tracking and address selection, significantly enhancing the customer experience.',
+        'Improved application responsiveness by <span class="text-[var(--p-primary-color)]">90%</span> and reduced page load time by <span class="text-[var(--p-primary-color)]">20%</span> through lazy loading, and design pattern optimization whilst following WCAG accessibility guidelines.',
         'Led the development of Internal Developer dashboard in for a brief period.',
-        'Liaise with Product Development team to implement new features based on <span class="text-[var(--p-primary-color)]">Figma</span> prototypes.'
+        'Redesigned customer registration flow and introduced in-memory caching for high-frequency queries, cutting backend API latency from over <span class="text-[var(--p-primary-color)]">500ms</span> to under <span class="text-[var(--p-primary-color)]">50ms</span> and reducing infrastructure costs.'
       ],
       links: [],
-      tech_stack: ['Angular |', 'NestJS |', 'PostgreSQL |', 'AWS']
+      tech_stack: ['Angular |', 'NestJS |', 'PostgreSQL |']
     },
     {
       title: 'Lakehead University',
-      position: 'Full Stack Developer Intern',
+      position: 'Full Stack Developer Intern (Capstone Project)',
       duration: 'Sept 2023 - Apr 2024',
       description: [
-        'Led the development of a production ready e-commerce application as part of my <span class="text-[var(--p-primary-color)]">Capstone project.</span>',
-        'Engineered <span class="text-[var(--p-primary-color)]">multi-currency</span> functionality to process transactions and display prices based on user preferences.',
-        'Implemented <span class="text-[var(--p-primary-color)]">Role-Based</span> Access Control, and <span class="text-[var(--p-primary-color)]">JWT-based</span> authorization for secure user authentication.',
-        'Implemented advanced inventory management using session cookies to prevent inventory race-conditions.',
-        'Improved API responses by <span class="text-[var(--p-primary-color)]">15%</span> through multithreaded data retrieval from AWS S3 and in-memory caching.',
-        'Integrated <span class="text-[var(--p-primary-color)]">Paystack</span> for secure payment processing across multiple currencies and set up a <span class="text-[var(--p-primary-color)]">Discord</span> private channel for real time application logs and monitoring'
+        'We developed a production-ready e-commerce application with features like inventory management, multi-currency support, authentication & authorization, and third-party integration.',
+        'Engineered inventory management using session cookies; improved API performance by <span class="text-[var(--p-primary-color)]">25%</span> through caching, multithreading.',
+        'Implemented OAuth-base authentication & role-based access control with Spring Security to support over <span class="text-[var(--p-primary-color)]">100</span> students.',
+        'Integrated AWS S3 for static data storage, Paystack for secure payments and Discord for real-time monitoring; achieved <span class="text-[var(--p-primary-color)]">90%</span> test coverage with TDD using JUnit and Test Containers.',
+        'Automated CI/CD pipelines via custom bash scripts, GitHub actions, and AWS (ECR, EC2), improving dev efficiency by <span class="text-[var(--p-primary-color)]">100%</span>.',
+        'Collaborated via Trello, documented using UML diagrams, and presented project outcomes through YouTube demos.'
       ],
       links: [
         { type: Link.LINK, link: 'https://capstone.emmanueluluabuike.com' },
@@ -86,11 +88,12 @@ export class ExperienceComponent {
   protected readonly projs = [
     {
       title: 'Reservation Application for Salons',
-      duration: 'Dec 2024 - Present',
+      duration: 'Dec 2024 - Feb 2025',
       description: [
-        'Timezone taken into consideration',
-        'Designed and implemented OAuth-based authentication and authorization mechanisms to enhance security whilst taking into consideration user roles & permissions.',
-        'Reduced query times to database by indexing foreign keys.'
+        'Built a timezone-independent reservation system with multi-service booking, real-time notifications, and access controls.',
+        'Implemented role- & permission-based authentication with secure session management using cookies.',
+        'Designed business logic for conflict-free scheduling, recurring availability, and soft deletion of linked data.',
+        'Integrated Stripe for invoice generation and online payment processing; achieved <span class="text-[var(--p-primary-color)]">90%</span> test coverage using Test Driven Development.'
       ],
       links: [
         { type: Link.LINK, link: 'https://salon.emmanueluluabuike.com' },
@@ -99,12 +102,13 @@ export class ExperienceComponent {
       tech_stack: ['Angular |', 'Go |', 'PostgreSQL |', 'Docker |', 'AWS']
     },
     {
-      title: 'Virtual Private Server',
+      title: 'System Administrator',
       duration: 'Jan 2023 - Present',
       description: [
-        'Applied knowledge gained from Cloud Computing & Computer Networks & Distributed Systems coursework to manage the EC2 instance.',
-        'Utilized Docker to streamline service management, running NGINX to proxy requests to appropriate services.',
-        'Integrated Cloudflare for IP-address masking, and to prevent Denial of Service Attack (DDoS). Also implemented strict security protocols, by setting up firewalls via ufw only exposing required TCP/UDP, and SSH ports.'
+        'Managed and secured AWS EC2 instances using Docker, Nginx (as reverse proxy), and UFW firewalls.',
+        'Implemented SSH key authentication and restricted port access to harden server security.',
+        'Integrated Cloudflare to mask IP addresses and mitigate DDoS attacks.',
+        'Designed an isolated Docker network architecture to tightly control inter-service communication.'
       ],
       links: [{ type: Link.GITHUB, link: `${environment.github}/vps` }],
       tech_stack: ['Cloudflare |', 'Docker |', 'NGINX |', 'AWS']
