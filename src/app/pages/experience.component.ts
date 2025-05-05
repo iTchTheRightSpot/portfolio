@@ -48,7 +48,7 @@ export class ExperienceComponent {
         'Integrated drag-and-drop document upload for Corporate Affairs Commission (CAC) verification, Google Maps API for real-time package tracking and address selection, significantly enhancing the customer experience.',
         'Improved application responsiveness by <span class="text-[var(--p-primary-color)]">90%</span> and reduced page load time by <span class="text-[var(--p-primary-color)]">20%</span> through lazy loading, and design pattern optimization whilst following WCAG accessibility guidelines.',
         'Led the development of Internal Developer dashboard in for a brief period.',
-        'Redesigned customer registration flow and introduced in-memory caching for high-frequency queries, cutting backend API latency from over <span class="text-[var(--p-primary-color)]">500ms</span> to under <span class="text-[var(--p-primary-color)]">50ms</span> and reducing infrastructure costs.'
+        'Cut backend API latency by <span class="text-[var(--p-primary-color)]">30%</span> by redesigning customer registration flow and adding in-memory caching for high-frequency queries.'
       ],
       links: [],
       tech_stack: ['Angular |', 'NestJS |', 'PostgreSQL |']
@@ -59,7 +59,7 @@ export class ExperienceComponent {
       duration: 'Sept 2023 - Apr 2024',
       description: [
         'We developed a production-ready e-commerce application with features like inventory management, multi-currency support, authentication & authorization, and third-party integration.',
-        'Engineered inventory management using session cookies; improved API performance by <span class="text-[var(--p-primary-color)]">25%</span> through caching, multithreading.',
+        'Engineered inventory management using session cookies; improved API performance by <span class="text-[var(--p-primary-color)]">25%</span> through caching and multithreading.',
         'Implemented OAuth-base authentication & role-based access control with Spring Security to support over <span class="text-[var(--p-primary-color)]">100</span> students.',
         'Integrated AWS S3 for static data storage, Paystack for secure payments and Discord for real-time monitoring; achieved <span class="text-[var(--p-primary-color)]">90%</span> test coverage with TDD using JUnit and Test Containers.',
         'Automated CI/CD pipelines via custom bash scripts, GitHub actions, and AWS (ECR, EC2), improving dev efficiency by <span class="text-[var(--p-primary-color)]">100%</span>.',
@@ -91,7 +91,7 @@ export class ExperienceComponent {
       duration: 'Dec 2024 - Feb 2025',
       description: [
         'Built a timezone-independent reservation system with multi-service booking, real-time notifications, and access controls.',
-        'Implemented role- & permission-based authentication with secure session management using cookies.',
+        'Implemented JWT-based authentication and role- & permission-based authentication with secure session management using cookies.',
         'Designed business logic for conflict-free scheduling, recurring availability, and soft deletion of linked data.',
         'Integrated Stripe for invoice generation and online payment processing; achieved <span class="text-[var(--p-primary-color)]">90%</span> test coverage using Test Driven Development.'
       ],
