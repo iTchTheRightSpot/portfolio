@@ -123,7 +123,7 @@ export class ExperienceComponent {
       links: [
         {
           type: Link.GITHUB,
-          link: `${environment.github}/Comp-2430-final-project`
+          link: `${environment.github}/comp-4312-cloud-computing-final-project`
         }
       ],
       tech_stack: ['HTML |', 'CSS |', 'JavaScript |', 'Putty |', 'AWS EC2']
