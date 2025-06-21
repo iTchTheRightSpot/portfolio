@@ -5,6 +5,7 @@ import { Image } from 'primeng/image';
 @Component({
   selector: 'app-home',
   imports: [Button, Image],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="flex gap-2 mt-8">
       <div class="w-full mb-4 flex justify-center">
@@ -28,8 +29,7 @@ import { Image } from 'primeng/image';
         <p-button label="Resume" (onClick)="resume()" />
       </div>
     </div>
-  `,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  `
 })
 export class HomeComponent {
   protected readonly resume = () => window.open('resume.pdf', '_blank');

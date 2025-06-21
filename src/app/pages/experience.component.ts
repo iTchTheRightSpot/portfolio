@@ -9,7 +9,7 @@ import { environment } from '~env/environment';
   imports: [Divider, JobComponent],
   template: `
     <div class="w-full my-8 grid gap-2 grid-cols-1 md:grid-cols-2">
-      <app-experience-section [title]="'experience'" [exp]="exs" />
+      <app-experience-section [title]="'experiences'" [exp]="experiences" />
       <div class="w-full flex flex-col md:flex-row">
         <div class="block md:hidden">
           <p-divider />
@@ -17,38 +17,39 @@ import { environment } from '~env/environment';
         <div class="hidden md:block">
           <p-divider layout="vertical" />
         </div>
-        <app-experience-section [title]="'projects'" [exp]="projs" />
+        <app-experience-section [title]="'projects'" [exp]="projects" />
       </div>
     </div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ExperienceComponent {
-  protected readonly exs = [
+  protected readonly experiences = [
     {
       title: 'S.EJ.U Development',
-      position: 'Lead Software Developer',
+      position: 'Founder/Full Stack Developer',
       duration: 'Jan 2025 - Present',
       description: [
-        'Developed <span class="text-[var(--p-primary-color)]">Speak</span>, a Chrome extension that aids language learning by converting text to speech with synchronized word highlighting.',
-        'Translated Figma prototypes into reusable, responsive, and accessible UI components.',
-        'Implemented interservice communication between Go and Python microservice.',
-        'Optimized API performance by applying aggressive timeouts and refining SQL queries with targeted indexing, reducing response times to under <span class="text-[var(--p-primary-color)]">50ms.</span>',
-        'Implemented secure, scalable OAuth-based authentication and authorization, supporting real-time access for <span class="text-[var(--p-primary-color)]">20</span> active users.'
+        'Building <span class="text-[var(--p-primary-color)]">Speak</span>, a Browser extension that aids language learning by converting text to speech with synchronized word highlighting.',
+        'Converted Figma designs into accessible, reusable, and responsive Angular components adhering to WCAG standards.',
+        'Implemented secure, scalable OAuth-based authentication, enabling concurrent user access with real-time session management.',
+        'Improved API performance by over <span class="text-[var(--p-primary-color)]">40%</span>, reducing response times to under <span class="text-[var(--p-primary-color)]">3secs</span> through aggressive timeouts and targeted indexing.',
+        'Developed low-latency, type-safe communication between Go and Python microservices using <span class="text-[var(--p-primary-color)]">gRPC.</span>'
       ],
       links: [],
       tech_stack: ['Angular |', 'Go |', 'Python |', 'PostgreSQL |', 'AWS']
     },
     {
       title: 'Fardelins',
-      position: 'Software developer (contract)',
+      position: 'Full Stack Developer (contract)',
       duration: 'June 2025 - Feb 2025',
       description: [
-        'Upgraded the Courier Dashboard from Angular 15 – 18, migrated state management from RxJS/NGRX to Signals and NGRX signal store, implemented new UI features based on Figma prototypes, and built reusable components to improve development efficiency and scalability',
-        'Integrated drag-and-drop document upload for Corporate Affairs Commission (CAC) verification, Google Maps API for real-time package tracking and address selection, significantly enhancing the customer experience.',
-        'Improved application responsiveness by <span class="text-[var(--p-primary-color)]">90%</span> and reduced page load time by <span class="text-[var(--p-primary-color)]">20%</span> through lazy loading, and design pattern optimization whilst following WCAG accessibility guidelines.',
-        'Led the development of Internal Developer dashboard in for a brief period.',
-        'Cut backend API latency by <span class="text-[var(--p-primary-color)]">30%</span> by redesigning customer registration flow and adding in-memory caching for high-frequency queries.'
+        'Led the upgraded of Courier Dashboard from Angular 15 – 18 and migrated state management from RxJS/NgRX to NgRX signal store.',
+        'Translated Figma prototypes into reuseable, responsive UI components, adhering to <span class="text-[var(--p-primary-color)]">WCAG</span> accessibility guidelines.',
+        'Built a drag-and-drop feature for Corporate Affairs Commission (CAC) verification document upload.',
+        'Enhanced Google Maps integration for real-time package tracking and intuitive address selection.',
+        'Redesigned customer registration flow improving API performance and reduced costs.',
+        'Collaborated with developers to enhance session management and integrate Google OAuth2 authentication, strengthening security.'
       ],
       links: [],
       tech_stack: ['Angular |', 'NestJS |', 'PostgreSQL |']
@@ -58,11 +59,12 @@ export class ExperienceComponent {
       position: 'Full Stack Developer Intern (Capstone Project)',
       duration: 'Sept 2023 - Apr 2024',
       description: [
-        'We developed a production-ready e-commerce application with features like inventory management, multi-currency support, authentication & authorization, and third-party integration.',
-        'Engineered inventory management using session cookies; improved API performance by <span class="text-[var(--p-primary-color)]">25%</span> through caching and multithreading.',
+        'We developed a production-ready e-commerce application with inventory management, multi-currency support, etc.',
+        'Integrated AWS S3 (static files storage), Paystack (secured payments) and Discord (real-time alerts).',
+        'Engineered inventory management using session cookies; improved API performance through caching and multithreading.',
         'Implemented OAuth-base authentication & role-based access control with Spring Security to support over <span class="text-[var(--p-primary-color)]">100</span> students.',
-        'Integrated AWS S3 for static data storage, Paystack for secure payments and Discord for real-time monitoring; achieved <span class="text-[var(--p-primary-color)]">90%</span> test coverage with TDD using JUnit and Test Containers.',
-        'Automated CI/CD pipelines via custom bash scripts, GitHub actions, and AWS (ECR, EC2), improving dev efficiency by <span class="text-[var(--p-primary-color)]">100%</span>.',
+        'Applied Test-Driven Development (TDD) to achieved over <span class="text-[var(--p-primary-color)]">90%</span> test coverage using JUnit and Test Containers.',
+        'Streamlined CI/CD by automating Docker-based deployments to EC2 with custom Bash scripts and GitHub Actions.',
         'Collaborated via Trello, documented using UML diagrams, and presented project outcomes through YouTube demos.'
       ],
       links: [
@@ -85,13 +87,22 @@ export class ExperienceComponent {
     }
   ];
 
-  protected readonly projs = [
+  protected readonly projects = [
     {
-      title: 'Reservation Application for Salons',
+      title: 'Utility (open-source library)',
+      duration: 'April 2025 - Present',
+      description: [
+        'Developing a modular Go library featuring reuseable components for logging, request parsing, error handling, etc. '
+      ],
+      links: [{ type: Link.GITHUB, link: `${environment.github}/utility` }],
+      tech_stack: ['Go |']
+    },
+    {
+      title: 'Revive Hair Studio',
       duration: 'Dec 2024 - Feb 2025',
       description: [
-        'Built a timezone-independent reservation system with multi-service booking, real-time notifications, and access controls.',
-        'Implemented JWT-based authentication and role- & permission-based authentication with secure session management using cookies.',
+        'Built a timezone-agnostic reservation application with multi-service booking, real-time notifications, and access controls.',
+        'Implemented OAuth2 authentication with cookie-based session management, supporting role- & permission-based access control.',
         'Designed business logic for conflict-free scheduling, recurring availability, and soft deletion of linked data.',
         'Integrated Stripe for invoice generation and online payment processing; achieved <span class="text-[var(--p-primary-color)]">90%</span> test coverage using Test Driven Development.'
       ],
@@ -107,8 +118,8 @@ export class ExperienceComponent {
       description: [
         'Managed and secured AWS EC2 instances using Docker, Nginx (as reverse proxy), and UFW firewalls.',
         'Implemented SSH key authentication and restricted port access to harden server security.',
-        'Integrated Cloudflare to mask IP addresses and mitigate DDoS attacks.',
-        'Designed an isolated Docker network architecture to tightly control inter-service communication.'
+        'Implemented an isolated Docker network to tightly control and limit inter-service communication to only necessary containers.',
+        'Integrated Cloudflare to mask IP addresses and mitigate DDoS attacks.'
       ],
       links: [{ type: Link.GITHUB, link: `${environment.github}/vps` }],
       tech_stack: ['Cloudflare |', 'Docker |', 'NGINX |', 'AWS']
