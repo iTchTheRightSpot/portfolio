@@ -33,7 +33,6 @@ export class ExperienceComponent {
         'Building <span class="text-[var(--p-primary-color)]">Speak</span>, a Browser extension that aids language learning by converting text to speech with synchronized word highlighting.',
         'Converted Figma designs into accessible, reusable, and responsive Angular components adhering to WCAG standards.',
         'Implemented secure, scalable OAuth-based authentication, enabling concurrent user access with real-time session management.',
-        'Improved API performance by over <span class="text-[var(--p-primary-color)]">40%</span>, reducing response times to under <span class="text-[var(--p-primary-color)]">3secs</span> through aggressive timeouts and targeted indexing.',
         'Developed low-latency, type-safe communication between Go and Python microservices using <span class="text-[var(--p-primary-color)]">gRPC.</span>'
       ],
       links: [],
@@ -45,14 +44,14 @@ export class ExperienceComponent {
       duration: 'June 2025 - Feb 2025',
       description: [
         'Led the upgraded of Courier Dashboard from Angular 15 – 18 and migrated state management from RxJS/NgRX to NgRX signal store.',
-        'Translated Figma prototypes into reuseable, responsive UI components, adhering to <span class="text-[var(--p-primary-color)]">WCAG</span> accessibility guidelines.',
+        'Translated Figma prototypes into reusable, responsive UI components, adhering to <span class="text-[var(--p-primary-color)]">WCAG</span> accessibility guidelines.',
         'Built a drag-and-drop feature for Corporate Affairs Commission (CAC) verification document upload.',
         'Enhanced Google Maps integration for real-time package tracking and intuitive address selection.',
         'Redesigned customer registration flow improving API performance and reduced costs.',
         'Collaborated with developers to enhance session management and integrate Google OAuth2 authentication, strengthening security.'
       ],
       links: [],
-      tech_stack: ['Angular |', 'NestJS |', 'PostgreSQL |']
+      tech_stack: ['Angular |', 'NestJS |', 'PostgreSQL']
     },
     {
       title: 'Lakehead University',
@@ -92,10 +91,10 @@ export class ExperienceComponent {
       title: 'Utility (open-source library)',
       duration: 'April 2025 - Present',
       description: [
-        'Developing a modular Go library featuring reuseable components for logging, request parsing, error handling, etc. '
+        'Developing a modular Go library featuring reusable components for logging, request parsing, error handling, etc. '
       ],
       links: [{ type: Link.GITHUB, link: `${environment.github}/utility` }],
-      tech_stack: ['Go |']
+      tech_stack: ['Go']
     },
     {
       title: 'Revive Hair Studio',
