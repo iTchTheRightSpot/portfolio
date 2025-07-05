@@ -30,7 +30,7 @@ export class ExperienceComponent {
       position: 'Founder/Full Stack Developer',
       duration: 'Jan 2025 - Present',
       description: [
-        'Building <span class="text-[var(--p-primary-color)]">Speak</span>, a Browser extension that aids language learning by converting text to speech with synchronized word highlighting.',
+        'Building <span class="text-[var(--p-primary-color)]">Speak</span>, a browser extension that aids language learning by converting text to speech with synchronized word highlighting.',
         'Converted Figma designs into accessible, reusable, and responsive Angular components adhering to WCAG standards.',
         'Implemented secure, scalable OAuth-based authentication, enabling concurrent user access with real-time session management.',
         'Developed low-latency, type-safe communication between Go and Python microservices using <span class="text-[var(--p-primary-color)]">gRPC.</span>'
