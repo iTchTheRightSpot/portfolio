@@ -20,11 +20,11 @@ import { Image } from 'primeng/image';
         <h1 class="text-xl lg:text-3xl">Somto Uluabuike</h1>
         <p class="my-4 text-sm lg:text-base">
           B.Sc General Science graduate from
-          <span class="text-[var(--p-primary-color)]"> Lakehead University</span
-          >, a Full Stack Developer at
-          <span class="text-[var(--p-primary-color)]">S.EJ.U Development</span>
-          and an Open-Source contributor with key interests in application
-          development and computer networks and distributed systems.
+          <span class="text-[var(--p-primary-color)]">
+            Lakehead University</span
+          >
+          , Full-Stack Developer skilled in building scalable apps, with solid
+          knowledge of computer networks, protocol and distributed systems.
         </p>
         <p-button label="Resume" (onClick)="resume()" />
       </div>

@@ -30,10 +30,8 @@ export class ExperienceComponent {
       position: 'Founder/Full Stack Developer',
       duration: 'Jan 2025 - Present',
       description: [
-        'Building <span class="text-[var(--p-primary-color)]">Speak</span>, a browser extension that aids language learning by converting text to speech with synchronized word highlighting.',
-        'Converted Figma designs into accessible, reusable, and responsive Angular components adhering to WCAG standards.',
-        'Implemented secure, scalable OAuth-based authentication, enabling concurrent user access with real-time session management.',
-        'Developed low-latency, type-safe communication between Go and Python microservices using <span class="text-[var(--p-primary-color)]">gRPC.</span>'
+        'Developing <span class="text-[var(--p-primary-color)]">Speak</span>,  a browser extension for language learning via text to speech with real-time word highlighting.',
+        'Simplified architecture by consolidating microservices into monolith, enhancing API performance.'
       ],
       links: [],
       tech_stack: ['Angular |', 'Go |', 'Python |', 'PostgreSQL |', 'AWS']
@@ -43,28 +41,26 @@ export class ExperienceComponent {
       position: 'Full Stack Developer (contract)',
       duration: 'June 2025 - Feb 2025',
       description: [
-        'Led the upgraded of Courier Dashboard from Angular 15 – 18 and migrated state management from RxJS/NgRX to NgRX signal store.',
-        'Translated Figma prototypes into reusable, responsive UI components, adhering to <span class="text-[var(--p-primary-color)]">WCAG</span> accessibility guidelines.',
-        'Built a drag-and-drop feature for Corporate Affairs Commission (CAC) verification document upload.',
+        'Led the upgraded of Courier Dashboard from Angular 15 to 18; migrated state management to NgRX signal store.',
+        'Converted Figma prototypes into responsive, reusable UI components following <span class="text-[var(--p-primary-color)]">WCAG</span> accessibility guidelines.',
+        'Built drag-and-drop Corporate Affairs Commission (CAC) document upload.',
         'Enhanced Google Maps integration for real-time package tracking and intuitive address selection.',
         'Redesigned customer registration flow improving API performance and reduced costs.',
-        'Collaborated with developers to enhance session management and integrate Google OAuth2 authentication, strengthening security.'
+        'Enhanced session management with Google OAuth2 for better user experience.'
       ],
       links: [],
-      tech_stack: ['Angular |', 'NestJS |', 'PostgreSQL']
+      tech_stack: ['Angular |', 'NestJS |', 'PostgresSQL']
     },
     {
       title: 'Lakehead University',
       position: 'Full Stack Developer Intern (Capstone Project)',
       duration: 'Sept 2023 - Apr 2024',
       description: [
-        'We developed a production-ready e-commerce application with inventory management, multi-currency support, etc.',
-        'Integrated AWS S3 (static files storage), Paystack (secured payments) and Discord (real-time alerts).',
-        'Engineered inventory management using session cookies; improved API performance through caching and multithreading.',
-        'Implemented OAuth-base authentication & role-based access control with Spring Security to support over <span class="text-[var(--p-primary-color)]">100</span> students.',
-        'Applied Test-Driven Development (TDD) to achieved over <span class="text-[var(--p-primary-color)]">90%</span> test coverage using JUnit and Test Containers.',
-        'Streamlined CI/CD by automating Docker-based deployments to EC2 with custom Bash scripts and GitHub Actions.',
-        'Collaborated via Trello, documented using UML diagrams, and presented project outcomes through YouTube demos.'
+        'Built a production-ready multicurrency e-commerce app with inventory management, race condition handling, and advanced filtering.',
+        'Secured over <span class="text-[var(--p-primary-color)]">100+</span> students, and merchants data using role-based access with Spring Security.',
+        'Integrated AWS S3, Paystack and Discord for file storage, payments, and real-time alerts.',
+        'Achieved over <span class="text-[var(--p-primary-color)]">90%</span> test coverage using TDD with JUnit and Test Containers.',
+        'Automated CI/CD pipelines using Docker, ECR, EC2 and GitHub Actions.'
       ],
       links: [
         { type: Link.LINK, link: 'https://capstone.emmanueluluabuike.com' },
@@ -100,10 +96,10 @@ export class ExperienceComponent {
       title: 'Revive Hair Studio',
       duration: 'Dec 2024 - Feb 2025',
       description: [
-        'Built a timezone-agnostic reservation application with multi-service booking, real-time notifications, and access controls.',
-        'Implemented OAuth2 authentication with cookie-based session management, supporting role- & permission-based access control.',
-        'Designed business logic for conflict-free scheduling, recurring availability, and soft deletion of linked data.',
-        'Integrated Stripe for invoice generation and online payment processing; achieved <span class="text-[var(--p-primary-color)]">90%</span> test coverage using Test Driven Development.'
+        'Built a timezone-agnostic reservation application for unisex hair and massage services.',
+        'Implemented booking management, advanced search, recurring/conflict-free staff scheduling.',
+        'Secured application data using role & permission-based access using JWT in cookie-based session.',
+        'Integrated Stripe for invoice and payments, Discord for real-time alerts; achieved <span class="text-[var(--p-primary-color)]">95%</span> test coverage using Test Driven Development (TDD).'
       ],
       links: [
         { type: Link.LINK, link: 'https://salon.emmanueluluabuike.com' },
@@ -115,19 +111,19 @@ export class ExperienceComponent {
       title: 'System Administrator',
       duration: 'Jan 2023 - Present',
       description: [
-        'Managed and secured AWS EC2 instances using Docker, Nginx (as reverse proxy), and UFW firewalls.',
-        'Implemented SSH key authentication and restricted port access to harden server security.',
-        'Implemented an isolated Docker network to tightly control and limit inter-service communication to only necessary containers.',
-        'Integrated Cloudflare to mask IP addresses and mitigate DDoS attacks.'
+        'Manage an AWS EC2 with Docker, Nginx, and UFW firewalls.',
+        'Hardened server security using SSH key authentication and port restrictions.',
+        'Set-up isolated Docker network to control inter-container communication.',
+        'Integrated Cloudflare to mask IP addresses and defend against DDoS attacks.'
       ],
       links: [{ type: Link.GITHUB, link: `${environment.github}/vps` }],
       tech_stack: ['Cloudflare |', 'Docker |', 'NGINX |', 'AWS']
     },
     {
-      title: 'Lakehead University Cloud Computing Coursework Final Project',
+      title: 'Firestick',
       duration: 'Sep - Dec 2021',
       description: [
-        'Collaborated with coursemates to design and deploy a photography portfolio website for a hypothetical  client, using HTML, CSS, JavaScript, Apache HTTP Server, and AWS EC2.',
+        'Collaborated with cloud computing coursemates to design and deploy a static webpage.',
         'Leveraged AWS EC2 for scalable compute capacity and minimal downtime, configuring the server via PuTTY for updates and management.'
       ],
       links: [
